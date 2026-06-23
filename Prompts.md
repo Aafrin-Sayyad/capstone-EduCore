@@ -9,10 +9,6 @@
 ---
 
 ### Prompt 1 — Project Selection & Stack Decision
-
-**Date:** Sprint 13, Day 1  
-**Tool:** Claude (Anthropic)
-
 **My Prompt:**
 > "I am building an LMS (like Udemy) as a frontend project using Next.js. What should my tech stack be and what core features should I include in my MVP?"
 
@@ -25,9 +21,6 @@ I chose this exact stack. I evaluated Redux Toolkit vs Zustand and picked Zustan
 ---
 
 ### Prompt 2 — Zustand Store Architecture
-
-**Date:** Sprint 13, Day 2  
-**Tool:** Claude (Anthropic)
 
 **My Prompt:**
 > "How should I structure my Zustand store for an LMS app? I need to handle: user authentication (student vs instructor roles), enrolled courses, and lesson progress tracking."
@@ -42,9 +35,6 @@ I kept all slices in one store file (`useStore.ts`) for simplicity instead of sp
 
 ### Prompt 3 — Folder Structure for Next.js App Router
 
-**Date:** Sprint 13, Day 2  
-**Tool:** Claude (Anthropic)
-
 **My Prompt:**
 > "What is the recommended folder structure for a Next.js 14 App Router project that has these pages: Auth, Student Dashboard, Course Catalog, Course Detail (dynamic route), Instructor Portal, and Profile?"
 
@@ -57,9 +47,6 @@ I followed this structure exactly. The `[id]` dynamic route pattern was new to m
 ---
 
 ### Prompt 4 — Mock Database Schema Design
-
-**Date:** Sprint 13, Day 3  
-**Tool:** Claude (Anthropic)
 
 **My Prompt:**
 > "I need to design a mock db.json file for an LMS. What collections/objects should I include and how should they relate to each other? My app needs: users (student + instructor roles), courses with lessons, enrollment tracking, and lesson progress."
@@ -74,9 +61,6 @@ I simplified progress to be keyed only by `courseId` inside the store (not userI
 
 ### Prompt 5 — Responsive Layout Strategy
 
-**Date:** Sprint 13, Day 4  
-**Tool:** Claude (Anthropic)
-
 **My Prompt:**
 > "For mobile responsiveness in Tailwind CSS, what breakpoints should I use for a course catalog grid that shows 1 column on mobile, 2 on tablet, and 3 on desktop?"
 
@@ -89,9 +73,6 @@ Directly applied these Tailwind classes. I also added a mobile search bar that's
 ---
 
 ### Prompt 6 — Role-Based Access Control (Frontend)
-
-**Date:** Sprint 13, Day 5  
-**Tool:** Claude (Anthropic)
 
 **My Prompt:**
 > "How do I implement basic role-based access control in a Next.js frontend-only app? I have two roles: student and instructor. The instructor route should only be accessible to instructors."
@@ -110,21 +91,7 @@ useEffect(() => {
 
 ---
 
-### Prompt 7 — Deployment to Vercel
 
-**Date:** Sprint 13, Day 6  
-**Tool:** Claude (Anthropic)
-
-**My Prompt:**
-> "How do I deploy a Next.js 14 project to Vercel? What are the exact steps including GitHub repo setup?"
-
-**AI Response Summary:**
-The AI gave a step-by-step: (1) Push code to a public GitHub repo, (2) Go to vercel.com and import the repo, (3) Vercel auto-detects Next.js and sets build settings, (4) Click Deploy. It also mentioned that the `VERCEL_URL` environment variable is auto-set, and that all Next.js features including App Router, dynamic routes, and client components work on Vercel's free Hobby plan.
-
-**How I used this:**
-Documented the deploy steps in the README.md. Will follow these during Sprint 17.
-
----
 
 ## Notes on AI Usage
 

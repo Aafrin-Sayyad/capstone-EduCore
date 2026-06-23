@@ -1,0 +1,185 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Arjun Mehta",
+      "email": "arjun@example.com",
+      "password": "student123",
+      "role": "student",
+      "avatar": "AM",
+      "enrolledCourses": ["c1", "c2", "c3"],
+      "joinedAt": "2024-01-15"
+    },
+    {
+      "id": "u2",
+      "name": "Priya Sharma",
+      "email": "priya@example.com",
+      "password": "instructor123",
+      "role": "instructor",
+      "avatar": "PS",
+      "coursesCreated": ["c1", "c4"],
+      "joinedAt": "2023-09-10"
+    }
+  ],
+  "courses": [
+    {
+      "id": "c1",
+      "title": "Complete React Developer in 2024",
+      "description": "Learn React, Hooks, Redux, Next.js from scratch. Build real-world projects and become job-ready.",
+      "instructor": "Priya Sharma",
+      "instructorId": "u2",
+      "category": "Web Development",
+      "thumbnail": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400",
+      "price": 499,
+      "originalPrice": 2999,
+      "rating": 4.7,
+      "totalReviews": 2341,
+      "totalStudents": 18500,
+      "totalLessons": 42,
+      "duration": "28h 30m",
+      "level": "Beginner",
+      "tags": ["React", "JavaScript", "Web Dev"],
+      "lessons": [
+        { "id": "l1", "title": "Introduction to React", "duration": "12:30", "type": "video", "isPreview": true },
+        { "id": "l2", "title": "Setting Up the Environment", "duration": "08:15", "type": "video", "isPreview": false },
+        { "id": "l3", "title": "JSX and Components", "duration": "22:10", "type": "video", "isPreview": false },
+        { "id": "l4", "title": "State and Props", "duration": "30:00", "type": "video", "isPreview": false },
+        { "id": "l5", "title": "React Hooks - useState", "duration": "18:45", "type": "video", "isPreview": false },
+        { "id": "l6", "title": "React Hooks - useEffect", "duration": "25:20", "type": "video", "isPreview": false },
+        { "id": "l7", "title": "Quiz: React Basics", "duration": "10 questions", "type": "quiz", "isPreview": false }
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "Python for Data Science & Machine Learning",
+      "description": "Master Python programming, NumPy, Pandas, Matplotlib, Seaborn, Scikit-Learn, Machine Learning & Deep Learning.",
+      "instructor": "Rahul Verma",
+      "instructorId": "u3",
+      "category": "Data Science",
+      "thumbnail": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400",
+      "price": 599,
+      "originalPrice": 3499,
+      "rating": 4.8,
+      "totalReviews": 5670,
+      "totalStudents": 42000,
+      "totalLessons": 65,
+      "duration": "40h 00m",
+      "level": "Intermediate",
+      "tags": ["Python", "ML", "Data Science"],
+      "lessons": [
+        { "id": "l1", "title": "Python Basics Refresher", "duration": "20:00", "type": "video", "isPreview": true },
+        { "id": "l2", "title": "NumPy Arrays", "duration": "35:00", "type": "video", "isPreview": false },
+        { "id": "l3", "title": "Pandas DataFrames", "duration": "40:00", "type": "video", "isPreview": false },
+        { "id": "l4", "title": "Data Visualization", "duration": "28:00", "type": "video", "isPreview": false }
+      ]
+    },
+    {
+      "id": "c3",
+      "title": "UI/UX Design Bootcamp: Zero to Hero",
+      "description": "Learn User Interface and User Experience design using Figma. Create stunning designs from scratch.",
+      "instructor": "Neha Gupta",
+      "instructorId": "u4",
+      "category": "Design",
+      "thumbnail": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400",
+      "price": 399,
+      "originalPrice": 2499,
+      "rating": 4.6,
+      "totalReviews": 1892,
+      "totalStudents": 12300,
+      "totalLessons": 38,
+      "duration": "22h 15m",
+      "level": "Beginner",
+      "tags": ["UI/UX", "Figma", "Design"],
+      "lessons": [
+        { "id": "l1", "title": "What is UX Design?", "duration": "15:00", "type": "video", "isPreview": true },
+        { "id": "l2", "title": "Design Principles", "duration": "25:00", "type": "video", "isPreview": false },
+        { "id": "l3", "title": "Figma Interface Tour", "duration": "20:00", "type": "video", "isPreview": false }
+      ]
+    },
+    {
+      "id": "c4",
+      "title": "Node.js, Express & MongoDB: Backend Bootcamp",
+      "description": "Build scalable REST APIs, work with databases, handle authentication, and deploy to production.",
+      "instructor": "Priya Sharma",
+      "instructorId": "u2",
+      "category": "Backend",
+      "thumbnail": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400",
+      "price": 549,
+      "originalPrice": 3199,
+      "rating": 4.5,
+      "totalReviews": 987,
+      "totalStudents": 8900,
+      "totalLessons": 50,
+      "duration": "32h 00m",
+      "level": "Intermediate",
+      "tags": ["Node.js", "Express", "MongoDB"],
+      "lessons": [
+        { "id": "l1", "title": "Node.js Introduction", "duration": "18:00", "type": "video", "isPreview": true },
+        { "id": "l2", "title": "Setting Up Express", "duration": "22:00", "type": "video", "isPreview": false },
+        { "id": "l3", "title": "REST API Design", "duration": "35:00", "type": "video", "isPreview": false },
+        { "id": "l4", "title": "MongoDB & Mongoose", "duration": "45:00", "type": "video", "isPreview": false }
+      ]
+    },
+    {
+      "id": "c5",
+      "title": "AWS Cloud Practitioner - Certification Prep",
+      "description": "Pass the AWS Certified Cloud Practitioner exam. Covers all AWS services, architecture, pricing, and best practices.",
+      "instructor": "Vikram Singh",
+      "instructorId": "u5",
+      "category": "Cloud",
+      "thumbnail": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400",
+      "price": 699,
+      "originalPrice": 3999,
+      "rating": 4.9,
+      "totalReviews": 3210,
+      "totalStudents": 28000,
+      "totalLessons": 55,
+      "duration": "36h 45m",
+      "level": "Beginner",
+      "tags": ["AWS", "Cloud", "DevOps"],
+      "lessons": [
+        { "id": "l1", "title": "What is Cloud Computing?", "duration": "14:00", "type": "video", "isPreview": true },
+        { "id": "l2", "title": "AWS Global Infrastructure", "duration": "19:00", "type": "video", "isPreview": false }
+      ]
+    },
+    {
+      "id": "c6",
+      "title": "Complete JavaScript: ES6+ Modern JS",
+      "description": "Master JavaScript fundamentals, DOM manipulation, ES6+, async/await, and build real-world applications.",
+      "instructor": "Ananya Roy",
+      "instructorId": "u6",
+      "category": "Web Development",
+      "thumbnail": "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=400",
+      "price": 449,
+      "originalPrice": 2799,
+      "rating": 4.7,
+      "totalReviews": 4120,
+      "totalStudents": 31000,
+      "totalLessons": 48,
+      "duration": "30h 20m",
+      "level": "Beginner",
+      "tags": ["JavaScript", "ES6", "Web Dev"],
+      "lessons": [
+        { "id": "l1", "title": "JavaScript Variables & Types", "duration": "16:00", "type": "video", "isPreview": true },
+        { "id": "l2", "title": "Functions and Scope", "duration": "24:00", "type": "video", "isPreview": false }
+      ]
+    }
+  ],
+  "progress": {
+    "u1": {
+      "c1": { "completedLessons": ["l1", "l2", "l3", "l4"], "lastWatched": "l4", "percentage": 57 },
+      "c2": { "completedLessons": ["l1", "l2"], "lastWatched": "l2", "percentage": 50 },
+      "c3": { "completedLessons": ["l1"], "lastWatched": "l1", "percentage": 33 }
+    }
+  },
+  "categories": ["All", "Web Development", "Data Science", "Design", "Backend", "Cloud"],
+  "announcements": [
+    {
+      "id": "a1",
+      "courseId": "c1",
+      "title": "New Bonus Section Added!",
+      "message": "I have added a new bonus section on React Performance Optimization. Check it out!",
+      "date": "2024-05-20"
+    }
+  ]
+}
